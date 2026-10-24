@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.env
+.run/
+node_modules/
+# large artifacts you generate locally (the built website in frontend/dist IS shipped so Node is optional)
+reports/runs/
+backend/models/*.h5
+backend/models/*.npy
+backend/models/model_config.json

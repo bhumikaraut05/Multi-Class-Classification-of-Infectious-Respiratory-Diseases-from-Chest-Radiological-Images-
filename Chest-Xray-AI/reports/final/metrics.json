@@ -1,0 +1,100 @@
+{
+  "n_samples": 100,
+  "accuracy": 0.2,
+  "macro_f1": 0.06666666666666667,
+  "weighted_f1": 0.06666666666666667,
+  "macro_auc_ovr": 0.20187499999999997,
+  "macro_auprc": 0.13917519857908506,
+  "per_class": {
+    "COVID-19": {
+      "precision": 0.2,
+      "recall": 1.0,
+      "f1": 0.3333333333333333,
+      "support": 20,
+      "roc_auc": 0.0,
+      "auprc": 0.11292951126329248
+    },
+    "Lung-Opacity": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "roc_auc": 0.256875,
+      "auprc": 0.1441327212002525
+    },
+    "Normal": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "roc_auc": 0.470625,
+      "auprc": 0.18594270115621667
+    },
+    "Viral Pneumonia": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "roc_auc": 0.23562499999999997,
+      "auprc": 0.13764946965073344
+    },
+    "Tuberculosis": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "roc_auc": 0.04624999999999999,
+      "auprc": 0.1152215896249302
+    }
+  },
+  "confusion_matrix": [
+    [
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      20,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "class_names": [
+    "COVID-19",
+    "Lung-Opacity",
+    "Normal",
+    "Viral Pneumonia",
+    "Tuberculosis"
+  ],
+  "classification_report": "                 precision    recall  f1-score   support\n\n       COVID-19       0.20      1.00      0.33        20\n   Lung-Opacity       0.00      0.00      0.00        20\n         Normal       0.00      0.00      0.00        20\nViral Pneumonia       0.00      0.00      0.00        20\n   Tuberculosis       0.00      0.00      0.00        20\n\n       accuracy                           0.20       100\n      macro avg       0.04      0.20      0.07       100\n   weighted avg       0.04      0.20      0.07       100\n",
+  "parameters": 1242411,
+  "weights_size_mb": 5.06,
+  "inference_ms_per_image_cpu_single": 18.5,
+  "split": "test",
+  "evaluated_at": "2026-10-17T22:42:25"
+}

@@ -1,0 +1,13 @@
+# Single container: FastAPI serves the API and the built website on http://localhost:8000
+# Requires backend/models/{model_config.json,final_model.h5} (+ mean_image.npy if listed) from ml.finalize.
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      MODEL_DIR: /app/backend/models
+      REPORTS_DIR: /app/reports/final
+      MAX_UPLOAD_SIZE_MB: "10"
+    volumes:
+      - ./backend/models:/app/backend/models:ro
+      - ./reports/final:/app/reports/final:ro

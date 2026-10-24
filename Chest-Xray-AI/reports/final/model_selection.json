@@ -1,0 +1,11 @@
+{
+  "selected": "custom_cnn_sa",
+  "candidates": [
+    {
+      "model": "custom_cnn_sa",
+      "macro_f1": 0.88,
+      "accuracy": 0.9,
+      "macro_auc": 0.96
+    }
+  ]
+}

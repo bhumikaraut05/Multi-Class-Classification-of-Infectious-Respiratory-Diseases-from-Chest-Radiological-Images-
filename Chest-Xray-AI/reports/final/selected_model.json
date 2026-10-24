@@ -1,0 +1,4 @@
+{
+  "model": "custom_cnn_sa",
+  "criterion": "macro_f1"
+}

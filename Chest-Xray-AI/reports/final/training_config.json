@@ -1,0 +1,39 @@
+{
+  "model": "custom_cnn_sa",
+  "display_name": "Custom CNN (Spatial Attention)",
+  "parameters": 1242411,
+  "preprocessing": {
+    "input_size": 224,
+    "zoom": null,
+    "clahe": true,
+    "sharpen": false,
+    "mean_subtract": false
+  },
+  "hyperparameters": {
+    "epochs": 25,
+    "batch": 32,
+    "lr": 0.0003
+  },
+  "optimizer": "Adam",
+  "class_weights": null,
+  "seed": 42,
+  "epochs_run": 25,
+  "best_epoch": 23,
+  "train_seconds": 420.0,
+  "environment": "Local Environment",
+  "split_sizes": {
+    "train": 22880,
+    "val": 4903,
+    "test": 4904
+  },
+  "class_counts": {
+    "train": {
+      "COVID-19": 2531,
+      "Lung-Opacity": 4208,
+      "Normal": 7134,
+      "Viral Pneumonia": 941,
+      "Tuberculosis": 490
+    }
+  },
+  "pretrained_imagenet_init": false
+}
